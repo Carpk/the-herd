@@ -1,7 +1,4 @@
-<%chart = {}%>
-<%@traffic.each do |t|%>
-  <%chart.merge!({t.created_at => t.wait}) %>
-<%end%>
 
+<%=@chart%>
 
-<%= line_chart chart %>
+<%= line_chart @chart %>
