@@ -3,6 +3,7 @@ class CreateTraffics < ActiveRecord::Migration
   	create_table :traffics do |t|
   		t.references :place
       t.integer    :wait
+      t.timestamp  :time
       
       t.timestamps
   	end

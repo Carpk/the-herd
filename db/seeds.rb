@@ -5,8 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-tj = Place.create(name: "TJs")
+Place.create(name: "TJs")
 
-cta = Place.create(name: "CTA")
+Place.create(name: "CTA")
 
-wlgrns = Place.create(name: "walgreens")
+Place.create(name: "walgreens")
+
+35.times do 
+  Traffic.create(place_id: rand(1..3),
+                 wait: rand(2..14),
+                 time: "2014-03-22 #{rand(8..22)}:55:15")
+end

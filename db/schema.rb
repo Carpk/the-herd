@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20140322162316) do
   create_table "traffics", :force => true do |t|
     t.integer  "place_id"
     t.integer  "wait"
+    t.datetime "time"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
