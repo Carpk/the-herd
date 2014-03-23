@@ -30,3 +30,8 @@
 .background{
   background: #331900;
 }
+
+ul li{
+  padding-bottom: 5px;
+  list-style-type: none;
+}

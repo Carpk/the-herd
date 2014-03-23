@@ -1,5 +1,7 @@
 
 <p>Select a place to check on current wait times.</p>
-<%@places.each do |p|%>
-  <a href="/store/<%=p.name%>"><%=p.name%></a>
-<%end%>
+<ul>
+  <%@places.each do |p|%>
+    <li><a href="/store/<%=p.name%>"><%=p.name%></a></li>
+  <%end%>
+</ul>
