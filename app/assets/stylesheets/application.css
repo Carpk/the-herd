@@ -16,9 +16,11 @@
   top: 0;
   padding: 20px;
   background: #572A00;
+  box-shadow: 0px 5px 5px #000000;
  }
 
  .content{
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 800px;
