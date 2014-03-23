@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 
 # Gem for graphs
+gem 'groupdate'
 gem 'chartkick', '~> 1.2.2'
 
 # Gems used only for assets and not required
