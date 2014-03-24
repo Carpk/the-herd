@@ -6,9 +6,7 @@ class Traffic < ActiveRecord::Base
     location_report = Traffic.where(place_id: store_id).all
     chart = {}
     location_report.each do |t|
-
       if (t.time - 5*60*60).strftime('%A') == Time.now.strftime('%A')
-        puts "VALIDATE: #{t.time} "
         chart.merge!({t.time => t.wait})
       end
     end

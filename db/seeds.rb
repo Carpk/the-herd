@@ -15,5 +15,5 @@ Place.create(name: "walgreens")
 280.times do 
   Traffic.create(place_id: rand(1..3),
                  wait: rand(2..14),
-                 time: "2014-03-#{rand(16..22)} #{rand(8..22)}:48:15 -0500")
+                 time: "2014-03-#{rand(16..22)} #{rand(8..21)}:48:15 -0500")
 end
